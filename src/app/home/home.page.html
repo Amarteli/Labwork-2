@@ -1,14 +1,23 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Something new
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
+    Oh wow,
+    The world is MY oyster.
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <button ion-button block (click)=openMenu()>Show Action Sheet</button>
+    <br>
+    <ion-item>
+        <ion-label>Pick date</ion-label>
+        <ion-datetime displayFormat="D MMM YYYY" min="1997" max="2030" value=""></ion-datetime>
+      </ion-item>
+      <br>
+      <ion-progress-bar color="secondary" type="indeterminate"></ion-progress-bar>
   </div>
 </ion-content>
